@@ -138,9 +138,9 @@ class prove: UIViewController {
 //                                    "email": "mostygt@gmail.com",
 //                                    "name": "Dennis Mostajo Maldonado",
 //                                    "aboutme": "Special forces on iOS and Android development",
-//                                    "code": "https://github.com/DennisMostajo/iOSCocos2DTest/blob/master/DennisDeadpool/DennisDeadpool/Intro.m",
+//                                    "code": "https://github.com/DennisMostajo/ProveYourWorthDennisLevel3/blob/master/ProveYourWorthDennis/ProveYourWorthDennis/code.py",
 //                                    "resume": "https://www.linkedin.com/in/dennis-mostajo-maldonado-536b9a68",
-//                                    "image": "https://github.com/DennisMostajo/iOSCocos2DTest/blob/master/d1.png"
+//                                    "image": "https://github.com/DennisMostajo/ProveYourWorthDennisLevel3/blob/master/ProveYourWorthDennis/ProveYourWorthDennis/image.jpg"
 //                                    ]
 //                                    prove.manager.request(reaperUrl, method: .post, parameters: payload).response
 //                                    { response in
@@ -156,18 +156,15 @@ class prove: UIViewController {
 //                                        multipartFormData.append(self.getDocumentsDirectory().appendingPathComponent("image.jpg"), withName:"image")
 //                                        multipartFormData.append(self.getDocumentsDirectory().appendingPathComponent("resume.pdf"), withName:"resume")
 //                                        multipartFormData.append(self.getDocumentsDirectory().appendingPathComponent("code.swift"), withName:"code")
-//                                        multipartFormData.append(self.getDocumentsDirectory().appendingPathComponent("image.jpg"), withName:"image", fileName:"image.jpg", mimeType: "image/jpeg")
-//                                        multipartFormData.append(self.getDocumentsDirectory().appendingPathComponent("resume.pdf"), withName:"resume", fileName:"resume.pdf", mimeType: "application/pdf")
-//                                        multipartFormData.append(self.getDocumentsDirectory().appendingPathComponent("resume.pdf"), withName:"resume", fileName:"resume.pdf", mimeType: "application/pdf")
                                         multipartFormData.append(self.getDocumentsDirectory().appendingPathComponent("image.jpg"), withName:"image", fileName:"image.jpg", mimeType: "image/jpeg")
                                         multipartFormData.append(self.getDocumentsDirectory().appendingPathComponent("resume.pdf"), withName:"resume", fileName:"resume.pdf", mimeType: "application/pdf")
                                         multipartFormData.append(self.getDocumentsDirectory().appendingPathComponent("code.swift"), withName:"code", fileName:"code.swift", mimeType: "application/swift")
                                         multipartFormData.append("mostygt@gmail.com".data(using: String.Encoding.utf8)!,withName: "email")
                                         multipartFormData.append("Dennis Mostajo Maldonado".data(using: String.Encoding.utf8)!,withName: "name")
                                         multipartFormData.append("I'm an iOS & Android developer with extensive experience in building high quality mobile Apps".data(using: String.Encoding.utf8)!,withName: "aboutme")
-//                                        multipartFormData.append("https://github.com/DennisMostajo/iOSCocos2DTest/blob/master/DennisDeadpool/DennisDeadpool/Intro.m".data(using: String.Encoding.utf8)!,withName: "code" as String)
+//                                        multipartFormData.append("https://github.com/DennisMostajo/ProveYourWorthDennisLevel3/blob/master/ProveYourWorthDennis/ProveYourWorthDennis/code.py".data(using: String.Encoding.utf8)!,withName: "code" as String)
 //                                        multipartFormData.append("https://www.linkedin.com/in/dennis-mostajo-maldonado-536b9a68".data(using: String.Encoding.utf8)!,withName: "resume" as String)
-//                                        multipartFormData.append("https://github.com/DennisMostajo/iOSCocos2DTest/blob/master/d1.png".data(using: String.Encoding.utf8)!,withName: "image" as String)
+//                                        multipartFormData.append("https://github.com/DennisMostajo/ProveYourWorthDennisLevel3/blob/master/ProveYourWorthDennis/ProveYourWorthDennis/image.jpg".data(using: String.Encoding.utf8)!,withName: "image" as String)
                                     }, usingThreshold:UInt64.init(), to: reaperUrl, method: .post, headers: postHeaders, encodingCompletion:
                                     { (response) in
                                         debugPrint("upload response:\(response)")
