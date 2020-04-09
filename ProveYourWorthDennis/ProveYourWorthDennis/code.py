@@ -41,7 +41,7 @@ def get_image_to_sign(uri_image: str) -> bytes:
 def sing_image(image: bytes) -> None:
     image = Image.open(image)
     draw = ImageDraw.Draw(image)
-    draw.text((20,70), f"Dennis Mostajo Maldonado, \n hash:{get_hash(start_uri)} \n iOS and Android Developer", fill=(1024,1024,0))
+    draw.text((20,70), f"Dennis Mostajo Maldonado, \n Hash:{get_hash(start_uri)} \n mostygt@gmail.com \n iOS and Android Developer", fill=(1024,1024,0))
     image.save("image.jpg","JPEG")
     
     
@@ -58,9 +58,9 @@ def post_back_to(payload: str) -> None:
         "email":"mostygt@gmail.com",
         "name":"Dennis Mostajo Maldonado",
         "aboutme": "I'm an iOS & Android developer with extensive experience in building high quality mobile Apps"
-        #"code":"https://github.com/DennisMostajo",
+        #"code":"https://github.com/DennisMostajo/ProveYourWorthDennisLevel3/blob/master/ProveYourWorthDennis/ProveYourWorthDennis/code.py",
         #"resume":"https://www.linkedin.com/in/dennis-mostajo-maldonado-536b9a68",
-        #"image":"https://github.com/DennisMostajo/iOSCocos2DTest/blob/master/d1.png"
+        #"image":"https://github.com/DennisMostajo/ProveYourWorthDennisLevel3/blob/master/ProveYourWorthDennis/ProveYourWorthDennis/image.jpg"
     }
     request = session.post(post_uri, data=data, files=file)
     print(request.status_code)
